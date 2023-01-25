@@ -1,0 +1,287 @@
+/*****************************FONTS*****************************/
+@font-face{
+    font-family: 'NHaas-Roman';
+    src: url(fonts/NeueHaasDisplay-Roman.ttf);
+    font-weight: normal;
+    font-style: normal;   
+}
+
+@font-face{
+    font-family: 'NHaas-Light';
+    src: url(fonts/NeueHaasDisplay-Light.ttf);
+    font-weight: normal;
+    font-style: normal;   
+}
+
+@font-face{
+    font-family: 'Denton-Reg';
+    src: url(fonts/DentonTest-Regular.otf);
+    font-weight: normal;
+    font-style: normal;   
+}
+
+@font-face{
+    font-family: 'Denton-Thin';
+    src: url(fonts/DentonTest-Thin.otf);
+    font-weight: normal;
+    font-style: normal;   
+}
+
+/****************************MAIN-PAGE****************************/
+
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    
+}
+
+
+.split {
+    height: 100%;
+    width: 40%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow: scroll;
+    padding-top: 20px;
+}
+
+
+
+/* LEFT SIDE */
+
+.left {
+    left: 0;
+    width: 60%;
+    position: fixed;
+}
+
+
+#header {
+    width: 50%;
+    display: inline-block;
+    height: auto;
+    margin-right:10%;
+    display: flex;
+    flex-direction: row;
+    text-shadow: 0px 0px 4px #282828;
+    position: fixed;
+}
+
+
+h1{
+    font-size: 40pt;
+    width: 100%;
+    line-height: 100%;
+    margin-top: 0%;
+    text-align: center;
+    position: relative;
+    font-family: 'NHaas-Roman';
+    text-transform: uppercase;
+}
+
+
+#serif_font{
+    font-family: 'Denton-Reg';
+    letter-spacing: 0.04em;
+}
+
+
+#menu{
+    width: 90%;
+    height: 100%;
+    height: auto;
+    text-align: center;
+    display: flex;
+    overflow: scroll;
+    flex-direction: column;
+    margin-top: 40vh;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+.tx_1{
+    font-family: 'Denton-Thin';
+    font-size:16px ;
+    text-transform: uppercase;
+    padding: 0%;
+    margin: 0%; 
+    margin-top: 1%;    
+}
+
+
+h2{
+    font-family: 'NHaas-Roman';
+    font-size: 35px;
+    padding: 0%;
+    margin-top: 1%;
+    margin: 0%;
+    letter-spacing:-0,2pt;
+    line-height:110% ;
+    text-transform: uppercase;   
+}
+
+
+#project_1{
+    margin-bottom: 9%;
+}
+
+
+
+#project_1 a:link{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+#project_1 a:hover{
+    text-decoration: none;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+    transition: 0.3s;
+}
+
+
+/* RIGHT SIDE */
+
+
+
+.right {
+    right: 0;
+    box-shadow: 4px 0px 14px 0px black;  
+}
+
+
+figure{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 80%;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    height: 200px;  
+    margin-bottom: 5%; 
+}
+
+
+
+figure img{
+    display: block;
+    top: 0;
+    width: 100%;
+}
+
+
+#intro{
+    font-family: 'NHaas-Roman';
+    font-size:20px ;
+    display: block;
+    position: absolute;
+    text-align: left;
+    width: 80%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+/*****************************PAGE_2****************************/
+#secondPage{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    background-color: white;
+}
+
+
+h3{
+    font-family: 'NHaas-Roman';
+    font-size: 30px;
+    padding: 0%;
+    color:black;
+    margin-top: 1%;
+    margin: 0%;
+    letter-spacing:-0,2px;
+    line-height:110% ;
+    text-transform: uppercase;   
+}
+
+
+#section_1{
+    width: 75%;
+    height: 100%;
+    height: auto;
+    text-align: left;
+    display: flex;
+    overflow: scroll;
+    flex-direction: column;
+    margin-top: 40vh;
+    margin-left: 5%;
+    margin-right: 20%;
+    margin-bottom: 5%;    
+}
+
+
+#tx_2{
+    font-family: 'NHaas-Light';
+    margin-top: 20px;
+    font-size: 18px;
+    margin-left: 15%;
+    line-height: auto;
+    width: 75%;
+    color: black;
+    text-align: left;
+}
+
+
+#tx_3{
+    font-family: 'NHaas-Roman';
+    font-size: 22px;
+    margin-left: 0%;
+}
+
+
+.bg_b{
+    background-color: black;
+}
+
+#videoContainer{
+    margin-top: 40vh;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 315px;  
+}
+
+iframe {
+    border: none;
+    padding-bottom:5%;
+}
+
+#button{
+    margin-top: 0%;
+    display: flex;
+    color: black;
+    z-index: 2;
+    position: relative;
+    width:auto;
+    height: auto;
+    text-decoration: none;
+    font-size: 11px;
+    text-transform: uppercase;
+   margin-left: 5%;
+    font-family: 'NHaas-Roman';
+}
+
+#button:hover{
+    color: white;
+    text-shadow: 0px 0px 5px black;
+    transition: 0.3s
+}
+
+
+
