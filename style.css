@@ -5,10 +5,23 @@
     font-weight: normal;
     font-style: normal;   
 }
+@font-face{
+    font-family: 'NHaas-Roman-Italic';
+    src: url(fonts/NeueHaasDisplay-RomanItalic.ttf);
+    font-weight: normal;
+    font-style: normal;   
+}
 
 @font-face{
     font-family: 'NHaas-Light';
     src: url(fonts/NeueHaasDisplay-Light.ttf);
+    font-weight: normal;
+    font-style: normal;   
+}
+
+@font-face{
+    font-family: 'NHaas-Light-Italic';
+    src: url(fonts/NeueHaasDisplay-LightItalic.ttf);
     font-weight: normal;
     font-style: normal;   
 }
@@ -26,6 +39,7 @@
     font-weight: normal;
     font-style: normal;   
 }
+
 
 /****************************MAIN-PAGE****************************/
 
@@ -49,8 +63,7 @@ body{
 }
 
 
-
-/* LEFT SIDE */
+/*** LEFT SIDE ***/
 
 .left {
     left: 0;
@@ -58,6 +71,7 @@ body{
     position: fixed;
 }
 
+/* HEADER*/
 
 #header {
     width: 60%;
@@ -88,6 +102,29 @@ h1{
     letter-spacing: 0.04em;
 }
 
+#button{
+    margin-top: 0%;
+    display: flex;
+    color: black;
+    z-index: 2;
+    width: 3%;
+    position: relative;
+    width:auto;
+    height: auto;
+    text-decoration: none;
+    font-size: 11px;
+    text-transform: uppercase;
+    margin-left: 5%;
+    font-family: 'NHaas-Roman';
+}
+
+#button:hover{
+    color: white;
+    text-shadow: 0px 0px 5px black;
+    transition: 0.3s
+}
+
+/* MENU*/
 
 #menu{
     width: 90%;
@@ -97,7 +134,7 @@ h1{
     display: flex;
     overflow: hidden;
     flex-direction: column;
-    margin-top: 40vh;
+    margin-top: 38vh;
     margin-left: 5%;
     margin-right: 5%;
 }
@@ -105,7 +142,7 @@ h1{
 
 .tx_1{
     font-family: 'Denton-Thin';
-    font-size:25px ;
+    font-size:18px ;
     text-transform: uppercase;
     padding: 0%;
     margin: 0%; 
@@ -115,9 +152,8 @@ h1{
 
 h2{
     font-family: 'NHaas-Roman';
-    font-size: 35px;
+    font-size: 30px;
     padding: 0%;
-    margin-top: 1%;
     margin: 0%;
     letter-spacing:-0,2pt;
     line-height:110% ;
@@ -125,23 +161,23 @@ h2{
 }
 
 
-#project_1{
-    margin-bottom: 9%;
+#project_1, #project_2, #project_3, #project_4{
+    margin-bottom: 3%;
 }
 
 
 
-#project_1 a:link{
+#project_1 a:link, #project_2 a:link, #project_3 a:link, #project_4 a:link{
     text-decoration: none;
     color: black;
 }
 
-#project_1 a:visited{
+#project_1 a:visited, #project_2 a:visited, #project_3 a:visited, #project_4 a:visited{
     text-decoration: none;
     color: black;;
 }
 
-#project_1 a:hover{
+#project_1 a:hover, #project_2 a:hover, #project_3 a:hover, #project_4 a:hover{
     text-decoration: none;
     color: white;
     text-shadow: 0px 0px 5px black;
@@ -149,62 +185,68 @@ h2{
 }
 
 
-
-
 /* RIGHT SIDE */
-
 
 
 .right {
     right: 0;
     box-shadow: 4px 0px 14px 0px black; 
-    background-color: black; 
+    background-color: black;    
 }
 
 
 figure{
     display: none;
-    position: absolute;
-    z-index: 1;
-    margin-top: 45%;
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
-    height: 200px;  
-    margin-bottom: 5%; 
+    position: fixed;
+    z-index: 2;   
 }
-
-
 
 figure img{
     display: block;
+    margin-top: 32vh;
     top: 0;
-    width: 100%;
+    margin-right: 2%;
+    margin-left: 2%;
+    width: 96%;
+    height: auto;  
 }
 
 
 #intro{
     font-family: 'NHaas-Roman';
     top: 0;
-    font-size:18px ;
-    margin-top: 44vh;
+    font-size:20px ;
+    text-transform: uppercase;
+    margin-top: 42vh;
     display: block;
     position: absolute;
     text-align: left;
-    width: 80%;
-    text-transform: uppercase;
     color: white;
-    margin-right: 5%;
-    margin-left: 5%;
+    margin-right: 6%;
+    margin-left: 6%;    
 }
 
-/*****************************PAGE_2****************************/
+/*****************************PROJECTS PAGES****************************/
 #secondPage{
     margin: 0;
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
     background-color: white;
+}
+
+
+#title:link, :visited{
+    width: 100%;
+    color: black;
+    text-decoration: none;
+}
+
+#title:hover{
+    text-decoration: none;
+    color: white;
+    text-shadow: 0px 0px 6px black;
+    transition: 0.3s;
 }
 
 
@@ -234,7 +276,6 @@ h3{
     margin-bottom: 5%;    
 }
 
-
 #tx_2{
     font-family: 'NHaas-Light';
     margin-top: 20px;
@@ -250,6 +291,7 @@ h3{
 #tx_3{
     font-family: 'NHaas-Roman';
     font-size: 22px;
+    text-align: left;
     margin-left: 0%;
 }
 
@@ -258,46 +300,27 @@ h3{
     background-color: black;
 }
 
+
 #videoContainer{
     margin-top: 40vh;
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
-    height: 315px; 
+    height: auto; 
      
 }
 
 iframe {
     border: none;
-    margin-bottom:80px;
+    margin-bottom:50px;
+    height: 315px;
 }
 
-#button{
-    margin-top: 0%;
-    display: flex;
-    color: black;
-    z-index: 2;
-    width: 3%;
-    position: relative;
-    width:auto;
-    height: auto;
-    text-decoration: none;
-    font-size: 11px;
-    text-transform: uppercase;
-    margin-left: 5%;
-    font-family: 'NHaas-Roman';
-}
-
-#button:hover{
-    color: white;
-    text-shadow: 0px 0px 5px black;
-    transition: 0.3s
-}
-
-.tx_4{
+#tx_4{
     font-family: 'NHaas-Light';
     font-size:12px ;
     padding: 0%;
+    text-align: left;
     margin: 0%; 
     margin-top: 1%;    
 }
@@ -317,9 +340,6 @@ iframe {
     transition: 0.3s
 }
 
-
-
-
 #p_img{
     margin-bottom: 80px;
 }
@@ -335,8 +355,24 @@ iframe {
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
-    height: auto; 
-     
+    height: auto;     
+}
+
+#roman-italic {
+    font-family: 'NHaas-Roman-Italic';
+}
+
+#light-italic {
+    font-family: 'NHaas-Light-Italic';
+}
+
+.tx-white {
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;  
+    font-family: 'NHaas-Light'; 
+    font-size: 12px;
+    margin-bottom: 50px;
 }
 
 
